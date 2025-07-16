@@ -75,5 +75,26 @@ function reverseWords(sentence){
 }
 console.log(reverseWords("hello world"));
 
+//Find the max nnumber in the array
 
+const numbers = [1,2,3,4,5,1];
+const Maxvalue = Math.max(...numbers);
+console.log(Maxvalue)
 
+//countVowels
+function countVowels(value){
+
+  value = value.toLowerCase();
+
+  const vowels = ['a','e','i','o','u'];
+
+  let count = 0;
+
+  for(let char of value){
+    if(vowels.includes(char)){
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countVowels("hello world"));
